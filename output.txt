@@ -1,0 +1,373 @@
+Assignment 
+
+
+###LAB 3
+Step 1: 
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoind -regtest -daemon
+Bitcoin Core starting
+
+Step 2:
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest createwallet devwallet 
+{
+  "name": "devwallet"
+}
+
+Step 3:
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ADDRESS=$(./bitcoin-cli -regtest getnewaddress) 
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest generatetoaddress 101 $ADDRESS 
+
+[
+  "37b4398f8987f7b75877a48652c02acf7199fa33ea976791c843405e4aabd854",
+  "4612d3f4b5ef12cd7eb3dedc9c336c92bc123c604b7ce7cafcbcf3ee536a3cfa",
+  "5cc682fae821043e692280d0e8a743afd3bf71b9cfbfbf224cf23873eb0fdbed",
+  "53cc7067f8f22710a1480425eee11ed00b7ca22ad5bc6d78646ed829665cff02",
+  "69f59b3ab64c757768fc378b5cd357126e512c82714defc8c22c37fd23d596f2",
+  "4116b2fd3600949fad8249e223aa5a4a442adadf91e727375b73366ec94b4cec",
+  "23b2e2fc19a820423868fa212ecab28584832dcf6d671a2533bd0edf47b4cf6a",
+  "78949b048eb048f60b64cbcb315b25703511bd7d9aec038f264be38cacbb5022",
+  "5a247d3d29f33ecb1886659dcd63adfcf3c1c9b9354e9ff1cd280d4d90656314",
+  "35d8200125ebb7df569fcc088e477e327384d34cf12d88122af4a3f6299f5c30",
+  "66124338b7c3714b632e35cc226e5a8f5c2707693b22dbccae7e484c0e6e8112",
+  "2e58a3faec311d9a19587ed9426337049f2287cc67adee37d175260cbd717975",
+  "7995fd84584b7966a2eaecce0cad68d8940a3cd406bcfa78f12ddb14e9fdd1f0",
+  "08a1624a1869ff5bd0ec589f875fac4afcd34d9c12cee2bc2f9ee5a3d991401e",
+  "42dd56aa2584560a029bf9ef4210a896cb4d40afdc4ebdce75b213f73cb9418b",
+  "1363e5036a15ce5f9383a097a1d88354c25fed5d7c4805cdf29b2ea3ca17c744",
+  "2c3ad08f49cdcb617d1159af3b30c25fb8a75356104c59f96512087244db778f",
+  "1d61fc12a9d94d5c4de9dee0c3594a5b038781d834b6418f1d495e5c46e0dd62",
+  "642d72263e2a6c6181e0461ceb5cee866d5c2ee62c1c1be631ab96ca3f52e659",
+  "000149de44c3c24b64eb1efa212ae8338182c094b0903992bbc3dcee754b078d",
+  "427f3756ce7b0452d777190639e04fd9312eac4249221942794d5b3fd20c65aa",
+  "4aa69de601e9226fa68a2f2df92a41c754a6029d59b4241545bb9f1e473dbd5c",
+  "7fa5495b775e55bab2b92ab6ed63e2f7518dd1af4c349c1e401c64b8336910d2",
+  "6b615f43527e2ef9d8a9c7075bdfdf8ff3ed8b5f64312681138e0a776f8e933e",
+  "7550ddcc926f787931bd5209ca4cb0d97b36004589e4a54b6fc679ff8d6ff9b7",
+  "2589bf6f0436f474c5e271499be628ea9b898e66b328939f28f9471d6f5fbe81",
+  "62025a2ccde00e7829c5e40adfe2c1a17259d6a2499cfd3b1749ef7969ceb33e",
+  "45dfb2b78e4b85bc203637f8ab80d4b8a5933ec6534ce9d12f07da757814daa2",
+  "4d63356190d878c32d77344fef5a9e33b12a8f851e9b58aeb33c4e66d98be7c2",
+  "7b5b9ad6c865969bee838cbf3837ea279d3a44c6ed99ac499f554525430a3649",
+  "2e194752adb55ac88e421a45f2c240a63913c7ec951231dfa9b9963460377127",
+  "6544e4512a28968e0dde54be9c27f6076de13134725f7d9125eecb3bbf811f99",
+  "46615da6f9e49bac7901c024ad396391789d62256df4a306101240586c39199c",
+  "498043b8f6228c682ceba4e733ac6efded90acc6376f4b617ec89fb7f6045415",
+  "40129af510f063ecba96ef919ccb871d330879d6c122c5e9ea61ad0f9fc4ee61",
+  "3dd79571b8f838f5f07465acdfcaac24a55a3dd268ec275eb1707cce230fce4d",
+  "13017a3ea89f4489182de9321b6dabadab3f3d8e259be6d6244411c79ee2c48c",
+  "1b1908683c64324f1e1992a585fd45ecb1ece097755741da37989527d1f442d6",
+  "3511c41c11f04a5ce6093e053b2c8b48cc92aa721638ac25b4a375e4bf469a76",
+  "4c69980668daa2c31f31e230e3566bafed86a83a32adf553b00f3d30d8edebe0",
+  "4651764f81d26687047010db61e970c9e83448e2ffb11146defce1ad50dc45ad",
+  "689c6692b3f6e7a077247af878799199394171d4ec3512f0afb7566ebbd7a231",
+  "751649de242283f4721cd62cce219a8a4408c1f44a01518c16a762f9884a8fd9",
+  "61ffb29bde1b30f7f4760f33493c328dde37ddffefa2f9c84c3960e956078126",
+  "0c371c724563ec836fd5b3ef3e31f3932f8035407077c9a5b851ca83cb62bd3e",
+  "4db9ccaba2eddb937806e5208f998846ec21d9b2d0c2c442bd6511c09d0af530",
+  "523c40e1d34f936d2f13fd44fc77500e0e37feac696b6fc897a467d087e4a7d4",
+  "1e4d624702e04fea397b525d2afb1a7dac0550c0a1e79f2f61fbe538f4d29892",
+  "3b338b05b6e4d374e8adb8a943f36602a14fae49e2cb79c63b6de5ddf58417d8",
+  "3663e18cce394a9763c39aa767661add4c51d44050e4ff32c8bbe52362ae9e3f",
+  "29845b8f1f4b0cd233e854dee17cba296b755434981fda02b12f2cc066c5750a",
+  "223aa7f7b15ddea39e08361f046b69bacd272fa564fc5884c5be1bab565f727a",
+  "3806a81bdad4c1b1646bc6dfb865388e6e36db08942836759f5ce91d7d04406c",
+  "0bee92a46113aa2f24015315814651d5234cbf1fb6829665d8ea7dddcbce0110",
+  "7d234a2199d8a9c1d459dff8f1a9332b43fb1c2ef1b4c05b3911829fa98a4160",
+  "5728b4f3fcc59aa8ffe5b79385df26d6ce4b0de2b6512ad3b3817f8f55d8f590",
+  "3048ab4f7857048e53dff6e1cb889f532f6cc0bd97416bd5ed1374aa22a273e9",
+  "1e104295985018b06867183b6b573c9f40c5c06a021b35884a3d37a168420232",
+  "1491149cfaa2fe5c0309eeee8f0fc46a2ceda2983b1668dcf9b6df191f95eba9",
+  "3bd071e6c184940a628fdbc7c29c61fe78ab4aea7aa49a19b724e1926472e7ed",
+  "178ae60b0d4952bfc0fef88a9bd518c428027f792f87a6dd2673cad469c222b4",
+  "54f72d7e6469222d2836a43336fc8e9d5b22a1ff730892200cf1c58c07b7f3ce",
+  "42e5cfbac187eff327539a5f9f9eab0ed1888ee6faaa3d8fc6e3d580c6e5b055",
+  "2f623067f4bca9974b6cd3a21c2f117950d935fe2db7f02a87fb38481c5005c9",
+  "50b024a0e2ad5945c0e825b8725c8ea7aeea01f6054f847e04d0b90a10474b20",
+  "58da8f41b537e49d0f118e114aae667aade3f30182a304985461dcf1c85159b4",
+  "146dbc9ac66b71e2fe02c0414691aa92589ac5ed2ae676507c55bcb72b790ffc",
+  "20c20a95013d9373732d9a75003b805fdb962b97dca09725ee825ef9ff9c55e9",
+  "0063aa64884a0f0aedbd3df524326d043d951f35d980056496291963154040f8",
+  "1fcc0918cf83be6e4f679b9de50daa640bc9a15c1fdba74bb47f9890f93bc931",
+  "7096f2c9c39508869b231c56cf91eb9d69d39f1f92ecfb2c413a26e9da4162f1",
+  "5ee108b99528c92525f82b7892110301a3cf2726b52d65c8e9f85d5a6e0d3688",
+  "3009c4291abd3d1b8afa1accfe26ae05bd4eb3ca5ffcbda9d79fe26e9b521c4e",
+  "040df3fce8309e697a0b90c1e55664b7e16a355be4990af913c49aabe82da501",
+  "175efbe4521e5690f5ba0421bbf62253aed8d54ef798116a8df88e767803b48d",
+  "7005a1538bde769756bc29bba268d819e65b4a680a52dffa79b96fbae9fd8395",
+  "12740b265a5b82a0761ceed6fade4ee7f896d0bb622f915d09ada6bf3346bdb6",
+  "21667a582ff74948c871fa1bec8da83819901d851c4554f2ad31f1ff5bb337bc",
+  "17b745aa6bf5517140ed63f8fee45902908c1910ce416fe2bcc6a9a8ca0d7212",
+  "6d5f238b332a01ec191f8f3b14a1fce7fcf52b414f9be2f718ce4cd0ec70bc7b",
+  "1d52015e99927ecb1dd4e6ddd96d4c0c259386f30b7c7b97c3f9b5813357324b",
+  "4901dc4fff0efca045cc852dc18f7aa75aecdd0244f9021e48e94049f59db1d9",
+  "6c5764209d4e11061928107b4751af43708e8d9bba3fec566d84c1825f2b8f32",
+  "3e1d28ffd9e8d879772a5fd5aac9e750292037cd8d178b5bd5698a01ab18ead3",
+  "550c07ebccd73b1987c3ef9dcd398a6980d447d55c8695cbf0b466d1fe16d911",
+  "53d4bbb39cd6e94e5cda492d878f4634d39d21febcabcfd42a032b2b78900715",
+  "514948dea502a92d8d6bd70e205c4fd4e58bce8d07dbc20a060a61b5531b4b5b",
+  "6b1e88c99e0ad200d44de6bbb5b3715ec87338a14001be318ac02a4a116a3d5e",
+  "4bfe94a9b4ba8826d15fef24fe394cef2a3b7aa0130e81d62ce4a01339265190",
+  "4e4a6f3c1fcee8f0e2a3cd153be9f6ecdcfdea5cef9a0ea266f3d5e79a8077d0",
+  "230b32fdaf62cc954a8479372d692d1c0e5dd299c127936e1d52bd41ab0946c7",
+  "0b8d20030af49b8a56fcfa137f6da8ddd6055cba4b26904ff0b422861511c6de",
+  "402ba7f7930547ffa1b2f083ca24197c0ccfb7447833a6660cd8a2e5b34313f2",
+  "5e60c11e781c0f6b9d8dc641e418b6884d916a177a9cbd58d8815d0b859ac073",
+  "19a55f4de2259e9056c61bc4bc558d8384e67244b2bd8423b0e7ef059482be4a",
+  "04cc9dcd0adf0791889176af74b54bc7a7c73578cbe5b65075431b600735f6bd",
+  "6fc47975eb4c95d09c4e4c5da81dfd675e807a0e7ab058f841a8b2d2438f4ea3",
+  "1a2d0d7b16c67727f9ef5ac808421a4ed8dc3e5d1cd997c64af1edae36a2391a",
+  "2e351e0be9f4e76e2314b59b47ced1ae35e31da9bf5d7d81c640a7fb92a6a473",
+  "7f4e784585f15c6b51bcb8cef23de8c9b1ca851abf822bf9145922af5003e49f",
+  "11a6288111af746b9fd8688b8d7b876390c4d04e4a96c1f74b5e00e5f04d309f"
+]
+
+Step 4: 
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest getblockchaininfo
+{
+  "chain": "regtest",
+  "blocks": 101,
+  "headers": 101,
+  "bestblockhash": "11a6288111af746b9fd8688b8d7b876390c4d04e4a96c1f74b5e00e5f04d309f",
+  "bits": "207fffff",
+  "target": "7fffff0000000000000000000000000000000000000000000000000000000000",
+  "difficulty": 4.656542373906925e-10,
+  "time": 1761220689,
+  "mediantime": 1761220679,
+  "verificationprogress": 1,
+  "initialblockdownload": false,
+  "chainwork": "00000000000000000000000000000000000000000000000000000000000000cc",
+  "size_on_disk": 30375,
+  "pruned": true,
+  "pruneheight": 0,
+  "automatic_pruning": true,
+  "prune_target_size": 1048576000,
+  "warnings": [
+    "This is a pre-release test build - use at your own risk - do not use for mining or merchant applications"
+  ]
+}
+
+
+###LAB 2
+Step 1 :
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ mkdir -p ~/bitcoin-node2 
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoind -regtest -datadir=$HOME/bitcoin-node2 -port=18445 -rpcport=18446 -daemon
+Bitcoin Core starting
+
+
+Step 2 :
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest addnode 127.0.0.1:18445 onetry 
+
+
+Step 3 :
+
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest getpeerinfo | jq '.[].addr' 
+
+###Lab 3
+
+Step 1 :
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ RECV_ADDR=$(./bitcoin-cli -regtest getnewaddress)
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest sendtoaddress $RECV_ADDR 5.0
+a08f41297732b6fd4cc1ae68331bbcbbc97d4523bc139e562c8e9e9a1c0a1daa
+
+Step 2 :
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest getmempoolinfo 
+{
+  "loaded": true,
+  "size": 1,
+  "bytes": 141,
+  "usage": 1200,
+  "total_fee": 0.00002820,
+  "maxmempool": 300000000,
+  "mempoolminfee": 0.00000100,
+  "minrelaytxfee": 0.00000100,
+  "incrementalrelayfee": 0.00000100,
+  "unbroadcastcount": 1,
+  "fullrbf": true,
+  "permitbaremultisig": true,
+  "maxdatacarriersize": 100000
+}
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest getrawmempool | jq '.'
+[
+  "a08f41297732b6fd4cc1ae68331bbcbbc97d4523bc139e562c8e9e9a1c0a1daa"
+]
+
+
+Step 3 :
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest generatetoaddress 1 $ADDRESS
+[
+  "110d10c20b36d7cf05c67981bbdbc25596ab4c266e222c0c3c219cdf4473cd99"
+]
+
+Step 4 :
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ TXID=$(./bitcoin-cli -regtest listtransactions | jq -r '.[-1].txid')
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest gettransaction $TXID
+{
+  "amount": 0.00000000,
+  "confirmations": 1,
+  "generated": true,
+  "blockhash": "110d10c20b36d7cf05c67981bbdbc25596ab4c266e222c0c3c219cdf4473cd99",
+  "blockheight": 203,
+  "blockindex": 0,
+  "blocktime": 1761291221,
+  "txid": "598d718c92a34bfbfb8b2a0c1dc0f2b3c58d14caf0dca9a1f67756c1c8c817fc",
+  "wtxid": "21703ea5dbef3485010d9934066765546cb39ac440b2a10b12abd6d6691b24d3",
+  "walletconflicts": [
+  ],
+  "mempoolconflicts": [
+  ],
+  "time": 1761291221,
+  "timereceived": 1761291221,
+  "bip125-replaceable": "no",
+  "details": [
+    {
+      "address": "bcrt1qszrh96ct6zkyecyxhdmnrlwnhsmf44pu5etewh",
+      "parent_descs": [
+        "wpkh([b654bff7/84h/1h/0h]tpubDDsjAMYiTh7TgeoPKqKJcaEuzF6yTRoEmAAFmaFfYFa5zfKnSvKke3faxcqyrvMWXzFoBkaMuvUf91jA17oWcDZMfLmEW6U218BZbc5HCWV/0/*)#r65yguar"
+      ],
+      "category": "immature",
+      "amount": 25.00000000,
+      "label": "",
+      "vout": 0,
+      "abandoned": false
+    }
+  ],
+  "hex": "020000000001010000000000000000000000000000000000000000000000000000000000000000ffffffff0402cb0000feffffff0200f9029500000000160014808772eb0bd0ac4ce086bb7731fdd3bc369ad43c0000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf901200000000000000000000000000000000000000000000000000000000000000000ca000000",
+  "lastprocessedblock": {
+    "hash": "110d10c20b36d7cf05c67981bbdbc25596ab4c266e222c0c3c219cdf4473cd99",
+    "height": 203
+  }
+}
+
+
+###Lab 4
+
+Step 1 :
+
+
+###Lab 5 
+
+Step 1 :
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoind -regtest -daemon -blockfilterindex=1
+Bitcoin Core starting
+
+Step 2 :
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ BLOCK_HASH=$(./bitcoin-cli -regtest getblockhash 1)
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest getblockfilter $BLOCK_HASH 
+{
+  "filter": "0180b5a0",
+  "header": "0931500d0b104b23eb52d58066f9ffea3ad3b5b5ab0ab707a63ce49af59726f0"
+}
+
+###Lab 6 :
+
+Step 1 :
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ BLOCK_HASH=$(./bitcoin-cli -regtest getbestblockhas
+h) 
+
+
+Step 2 :
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest getblock $BLOCK_HASH true
+{
+  "hash": "110d10c20b36d7cf05c67981bbdbc25596ab4c266e222c0c3c219cdf4473cd99",
+  "confirmations": 1,
+  "height": 203,
+  "version": 805306368,
+  "versionHex": "30000000",
+  "merkleroot": "598d718c92a34bfbfb8b2a0c1dc0f2b3c58d14caf0dca9a1f67756c1c8c817fc",
+  "time": 1761291221,
+  "mediantime": 1761291189,
+  "nonce": 0,
+  "bits": "207fffff",
+  "target": "7fffff0000000000000000000000000000000000000000000000000000000000",
+  "difficulty": 4.656542373906925e-10,
+  "chainwork": "0000000000000000000000000000000000000000000000000000000000000198",
+  "nTx": 1,
+  "previousblockhash": "5cb184e4c994d3cbd06f83560cca1c20e33900f1054ff122f27150648a2aac6d",
+  "strippedsize": 214,
+  "size": 250,
+  "weight": 892,
+  "tx": [
+    "598d718c92a34bfbfb8b2a0c1dc0f2b3c58d14caf0dca9a1f67756c1c8c817fc"
+  ]
+}
+
+
+###Lab 7 
+Step 1 :
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest setnetworkactive false
+false
+
+###Lab 8 
+
+
+###Lab 9 
+Step 1 :
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest getpeerinfo | jq '[.[] | {addr, subver, inbound}]'
+[]
+
+Step 2 :
+recious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest getnetworkinfo
+{
+  "version": 309900,
+  "subversion": "/Satoshi:30.99.0/",
+  "protocolversion": 70016,
+  "localservices": "0000000000000c08",
+  "localservicesnames": [
+    "WITNESS",
+    "NETWORK_LIMITED",
+    "P2P_V2"
+  ],
+  "localrelay": true,
+  "timeoffset": 0,
+  "networkactive": false,
+  "connections": 0,
+  "connections_in": 0,
+  "connections_out": 0,
+  "networks": [
+    {
+      "name": "ipv4",
+      "limited": false,
+      "reachable": true,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "ipv6",
+      "limited": false,
+      "reachable": true,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "onion",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "i2p",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "cjdns",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    }
+  ],
+  "relayfee": 0.00000100,
+  "incrementalfee": 0.00000100,
+  "localaddresses": [
+  ],
+  "warnings": [
+    "This is a pre-release test build - use at your own risk - do not use for mining or merchant applications"
+  ]
+}
+
+###Lab 10
+precious@DESKTOP-2NAL4ED:~/bitcoin/build/bin$ ./bitcoin-cli -regtest stop
+Bitcoin Core stopping
